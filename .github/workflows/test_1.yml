@@ -33,5 +33,5 @@ jobs:
         run: ls -al
       - name: ls
         run: |
-          echo "hola mundo" >> hola.txt
-          cat hola.txt
+          chmod +x script.sh
+          ./script.sh
