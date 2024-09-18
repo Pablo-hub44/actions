@@ -1,5 +1,4 @@
-name: Hi World
-
+name: hola mundo
 on: [push]
 
 jobs:
