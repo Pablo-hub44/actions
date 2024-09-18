@@ -31,3 +31,7 @@ jobs:
         uses: actions/checkout@v4.1.7      
       - name: LS
         run: ls -al
+      - name: ls
+        run: |
+          echo "hola mundo" >> hola.txt
+          cat hola.txt
