@@ -58,4 +58,4 @@ jobs:
 
       - name: ls
         uses: ./.github/actions/my-action
-        shell: bash
+        #shell: bash en el workflow no se pone pero si en la action
