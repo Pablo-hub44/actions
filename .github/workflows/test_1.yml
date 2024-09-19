@@ -55,3 +55,7 @@ jobs:
 
       - name: node version
         run: php --version
+
+      - name: ls
+        uses: ./.github/actions/my-action
+        shell: bash

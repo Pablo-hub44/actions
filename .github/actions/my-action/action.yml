@@ -11,7 +11,5 @@ runs:
     - name: Checkout
       uses: actions/checkout@v4.1.7 
 
-    - name: ls
-      uses: ./.github/actions/my-action
-      shell: bash
+    
 
