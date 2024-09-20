@@ -1,15 +1,24 @@
 name: "mi accion"
 description: "Test my action"
 
+inputs: #directiva para parametros
+  message:   
+    description: "El mensaje a imprimir" #la descripcion, los contextos
+    required: true   #si es requerido o no
+    default: "Hola"  #valor por defecto
+
 runs:
   using: "composite"   #para poder reutilizar
 
-  steps: 
+  steps:  # las acciones son pequeños bloques reutilizables
     - name: hola mundo
       uses: actions/checkout@v3
 
     - name: Checkout
       uses: actions/checkout@v4.1.7 
 
+    - name: Hola mundo 2
+      run: echo "Hola ${{inputs.message }}"
+      shell: bash
     
 

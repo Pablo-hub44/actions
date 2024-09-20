@@ -59,3 +59,5 @@ jobs:
       - name: ls
         uses: ./.github/actions/my-action
         #shell: bash en el workflow no se pone pero si en la action
+        with: 
+          message: "Pablo"
