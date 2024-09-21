@@ -1,0 +1,16 @@
+name: Ejemplo de composite Action
+
+on: [push]
+
+jobs:
+  say-hello2:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VAR: mi variable de entorno #podemos crear variables en env y usarlas a nivel steps
+
+    steps:
+      - name: Test
+        env:
+          STEP_MY_VAR: Nivel step
+        run: echo "Valor $MY_VAR"
