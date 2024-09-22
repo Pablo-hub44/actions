@@ -16,5 +16,5 @@ jobs:
         run: echo "Valor ${{vars.MI_VARIABLE_2}}"
 
       - name: Secret
-        run: echo "Secret ${{vars.MI_SECRET}}"
+        run: echo "Secret ${{secrets.MI_SECRET}}"
         
