@@ -1,0 +1,17 @@
+name: Simple Workflow
+
+on: 
+  push:
+    branches:
+      - main  # Se ejecuta cuando se hace push en la rama main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Usa la última versión de Ubuntu como sistema operativo
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4  # Clona el repositorio en la máquina virtual
+
+      - name: Imprimir mensaje en la terminal
+        run: echo "Hello, GitHub Actions!"  # Ejecuta un comando en la terminal
